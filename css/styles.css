@@ -1,0 +1,93 @@
+/* Fonts
+--------------------------------*/
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('GothamPro-Bold.woff') format('woff'), url('GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('../fonts/GothamPro-Black.eot');
+    src: url('GothamPro-Black.eot?#iefix') format('embedded-opentype'), url('GothamPro-Black.woff') format('woff'), url('GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('GothamPro-Medium.woff') format('woff'), url('GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles
+--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer
+--------------------------------*/
+
+header {
+    background: url("../images/header.png") no-repeat;
+    background-size: 100% 100%;
+    min-height: 1300px;
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(255, 255, 255, 0.149);
+}
+
+#logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.container {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    padding: 67px 23px;
+}
+
+.nav-menu li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn {
+    float: right;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(103, 150, 206);
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 0;
+    background: white;
+}
+
+
