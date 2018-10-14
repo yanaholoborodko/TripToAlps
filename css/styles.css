@@ -2,27 +2,8 @@
 --------------------------------*/
 
 @font-face {
-    font-family: 'Gotham Pro Bold';
-    src: url('../fonts/GothamPro-Bold.eot');
-    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('GothamPro-Bold.woff') format('woff'), url('GothamPro-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro Black';
-    src: url('../fonts/GothamPro-Black.eot');
-    src: url('GothamPro-Black.eot?#iefix') format('embedded-opentype'), url('GothamPro-Black.woff') format('woff'), url('GothamPro-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro Medium';
-    src: url('../fonts/GothamPro-Medium.eot');
-    src: url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('GothamPro-Medium.woff') format('woff'), url('GothamPro-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Better Together';
+    src: url(../fonts/bettertogether.otf);
 }
 
 /* Global styles
@@ -33,13 +14,34 @@
     padding: 0;
 }
 
+html {
+    font-size: 1rem;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+h2 {
+    font-size: 3.75rem;
+    color: rgb(83, 154, 225);
+    margin-bottom: 4.5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* Header and Footer
 --------------------------------*/
 
 header {
+    position: relative;
     background: url("../images/header.png") no-repeat;
     background-size: 100% 100%;
-    min-height: 1300px;
+    min-height: 800px;
     height: auto;
     width: 100%;
 }
@@ -54,15 +56,10 @@ nav {
     margin: 0;
 }
 
-.container {
-    width: 72%;
-    margin: 0 auto;
-}
-
 .nav-menu {
-    list-style-type: none;
     display: flex;
     justify-content: center;
+    margin-left: 8%;
 }
 
 .nav-menu li {
@@ -70,7 +67,6 @@ nav {
 }
 
 .nav-menu li a {
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-weight: 800;
@@ -78,16 +74,44 @@ nav {
     text-decoration: none;
 }
 
-.btn {
+.btn-header {
     float: right;
+    margin-top: 5.5%;
     font-size: 16px;
     font-weight: 800;
     color: rgb(103, 150, 206);
     text-transform: uppercase;
-    padding: 10px 25px;
+    padding: 1% 5%;
     border-radius: 25px;
     border: 0;
     background: white;
 }
 
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Better Together', Helvetica, sans-serif;
+    color: white;
+    font-size: 7rem;
+}
 
+/* About the Alps
+--------------------------------*/
+
+.container.about {
+    display: flex;
+}
+
+.container.about p {
+    /* line-height: 1.5rem; */
+    font-size: 18px;
+    color: rgb(103, 150, 206);
+    line-height: 2;
+}
+
+.alps-info {
+    width: 60%;
+}
