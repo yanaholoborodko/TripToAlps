@@ -64,6 +64,10 @@ header {
     width: 100%;
 }
 
+footer {
+    background-color: #0f3397;
+}
+
 nav {
     background-color: rgb(255, 255, 255, 0.149);
 }
@@ -249,7 +253,7 @@ nav {
 
 .gallery {
     position: relative;
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 
@@ -322,4 +326,36 @@ nav {
     position: absolute;
     top: -20%;
     left: 37%;
+}
+
+#reviews h2 {
+    margin-top: 13%;
+}
+
+/* Contacts
+--------------------------------*/
+
+#contact {
+    background-color: #4a70b6;
+    margin-bottom: 0;
+}
+
+#contact h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+form input {
+    margin-right: 3%;
+    padding-left: 2%;
+    font-size: 1.125rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
 }
