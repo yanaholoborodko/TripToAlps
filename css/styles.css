@@ -48,8 +48,13 @@ hr {
     margin-bottom: 10%;
 }
 
+.short-hr {
+    margin-bottom: 4%;
+}
+
 /* Header and Footer
 --------------------------------*/
+
 header {
     position: relative;
     background: url("../images/header.png") no-repeat;
@@ -171,14 +176,16 @@ nav {
     height: 1000px; 
     width: 100%;  */
 }
+
 .hotel-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .hotel-list li {
     position: relative;
     width: 263px;
+    margin: 0 10px;
 }
 
 .hotel-top, .hotel-bottom {
@@ -211,8 +218,8 @@ nav {
 .under-hotels {
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
     margin-top: 4%;
+    padding-bottom: 5%;
 }
 
 .under-hotels p {
@@ -221,6 +228,7 @@ nav {
     font-weight: 800;
     padding: 1%;
     padding-left: 5%;
+    text-transform: uppercase;
 }
 
 .btn-main {
@@ -233,5 +241,46 @@ nav {
     border-radius: 25px;
     border: 0;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
+
+/* Gallery
+--------------------------------*/
+
+.gallery {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.gallery img {
+    background-color: rgb(103, 150, 206);
+    opacity: 0.9;
+    box-shadow: 0px 13px 25px 0px rgba(204, 204, 204, 0.5);
+    position: absolute;
+}
+
+#gallery-item-1 {
+    bottom: 0;
+    z-index: 10;
+}
+
+#gallery-item-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+#gallery-item-3 {
+    right: 0;
+    z-index: 6;
+}
+
+.gallery .btn-main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 
