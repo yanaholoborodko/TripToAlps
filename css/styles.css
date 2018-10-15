@@ -28,15 +28,28 @@ h2 {
     font-size: 3.75rem;
     color: rgb(83, 154, 225);
     margin-bottom: 4.5%;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
 }
 
+section {
+    margin-bottom: 5%;
+}
+
+hr {
+    margin: 0 auto;
+    width: 5%;
+    height: 5px;
+    border: 10px;
+    background-color: #6796ce;
+    margin-bottom: 10%;
+}
+
 /* Header and Footer
 --------------------------------*/
-
 header {
     position: relative;
     background: url("../images/header.png") no-repeat;
@@ -70,14 +83,16 @@ nav {
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-weight: 800;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .btn-header {
     float: right;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 5.5%;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 800;
     color: rgb(103, 150, 206);
     text-transform: uppercase;
@@ -85,6 +100,7 @@ nav {
     border-radius: 25px;
     border: 0;
     background: white;
+    letter-spacing: 1px;
 }
 
 .caption {
@@ -101,6 +117,14 @@ nav {
 /* About the Alps
 --------------------------------*/
 
+#about-the-alps {
+    text-align: left;
+}
+
+#about-alps {
+    margin-bottom: 0;
+}
+
 .container.about {
     display: flex;
 }
@@ -115,3 +139,99 @@ nav {
 .alps-info {
     width: 60%;
 }
+
+.alps-info2 {
+    width: 40%;
+}
+
+.alps-info2 li {
+    display: flex;
+    align-items: center;
+}
+
+.alps-info2 li img {
+    width: 100%;
+    max-width: 119px;
+    height: auto;
+    margin: 0 10% 10% 10%;
+}
+
+.alps-info2 li div {
+    margin-bottom: 10%;
+}
+
+/* Hotels
+--------------------------------*/
+
+#hotels-info {
+    padding-top: 5%;
+    /* background: url("../images/hotels-background.png") no-repeat;
+    background-size: 100% 100%;
+    min-height: 1200px;
+    height: 1000px; 
+    width: 100%;  */
+}
+.hotel-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-list li {
+    position: relative;
+    width: 263px;
+}
+
+.hotel-top, .hotel-bottom {
+    position: absolute;
+    color: white;
+}
+
+.hotel-top {
+    top: 3%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hotel-bottom {
+    bottom: 4%;
+    left: 5%;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+}
+
+.note {
+    font-size: 0.75rem;
+}
+
+.under-hotels {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 4%;
+}
+
+.under-hotels p {
+    font-size: 1rem;
+    color: #6896ce;
+    font-weight: 800;
+    padding: 1%;
+    padding-left: 5%;
+}
+
+.btn-main {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom right, rgb(56, 159, 250), rgb(103, 150, 206));
+    box-shadow: 0px 13px 25px 0px rgba(51, 133, 207, 0.5);
+    font-weight: 800;
+    padding: 1% 5%;
+    border-radius: 25px;
+    border: 0;
+    letter-spacing: 1px;
+}
+
