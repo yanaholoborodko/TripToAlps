@@ -45,7 +45,7 @@ hr {
     height: 5px;
     border: 10px;
     background-color: #6796ce;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 .short-hr {
@@ -283,4 +283,43 @@ nav {
     bottom: 0;
 }
 
+/* Reviews
+--------------------------------*/
 
+.review-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.review-list li {
+    margin: 0 2%;
+    min-width: 270px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 25px 0px rgba(228, 228, 228, 0.5);
+}
+
+.name {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.review-list p {
+    font-size: 0.875rem;
+    color: rgb(157, 157, 157);
+    line-height: 1.7rem;
+}
+
+.review-list img {
+    position: absolute;
+    top: -20%;
+    left: 37%;
+}
