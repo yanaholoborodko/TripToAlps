@@ -110,6 +110,13 @@ nav {
     border: 0;
     background: white;
     letter-spacing: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;
 }
 
 .caption {
@@ -174,11 +181,7 @@ nav {
 
 #hotels-info {
     padding-top: 5%;
-    /* background: url("../images/hotels-background.png") no-repeat;
-    background-size: 100% 100%;
-    min-height: 1200px;
-    height: 1000px; 
-    width: 100%;  */
+
 }
 
 .hotel-list {
@@ -190,7 +193,13 @@ nav {
     position: relative;
     width: 263px;
     margin: 0 10px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;
 }
+
 
 .hotel-top, .hotel-bottom {
     position: absolute;
@@ -246,6 +255,23 @@ nav {
     border: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active,
+.btn-header:hover,
+.btn-header:focus,
+.btn-header:active,
+.hotel-list li:hover {
+    transform: scale(1.1);
 }
 
 /* Gallery
